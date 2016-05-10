@@ -99,8 +99,8 @@ $(document).ready(function() {
         autoplayHoverPause: true,
         autoplaySpeed: 1000
 
-    }); 
-$(".owl-dots-next").click(function() {
+    });
+    $(".owl-dots-next").click(function() {
         owl1.trigger("next.owl.carousel");
     });
     $(".owl-dots-prev").click(function() {
@@ -120,8 +120,8 @@ $(".owl-dots-next").click(function() {
         autoplayHoverPause: true,
         autoplaySpeed: 2000,
         dots: true,
-      dotsContainer: '#customDots'
-         
+        dotsContainer: '#customDots'
+
     });
 
     $(".owl-dots-next1").click(function() {
@@ -160,56 +160,92 @@ $(".owl-dots-next").click(function() {
         owl3.trigger("prev.owl.carousel");
 
     }); //end carousel
-function expand() {
-  $(".search").toggleClass("close");
-  $(".input").toggleClass("square");
-  if ($('.search').hasClass('close')) {
-    $('.input').focus();
-  } else {
-    $('.input').blur();
-  }
-};
-$('button').on('click', expand);
-//end search bar
-
-$(function () {
-  $.scrollUp({
-    scrollName: 'scrollUp', // Element ID
-    topDistance: '300', // Distance from top before showing element (px)
-    topSpeed: 6000, // Speed back to top (ms)
-    animation: 'slide', // Fade, slide, none
-    animationInSpeed: 5000, // Animation in speed (ms)
-    animationOutSpeed: 3000, // Animation out speed (ms)
-    scrollImg: true,
-    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-  });
-});
-//end scroll up
-
-var $triggered_times = 0;
-$(window).scroll(function() {
- var hT = $('.about_text').offset().top,
-   hH = $('.about_text').outerHeight(),
-      wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH) && $triggered_times == 0){
-      $('.circle').circleProgress({
-    value: 0.8,
-    size: 120,
-    startAngle: -1.6,
-    thickness:4,
-    fill: {
-            gradient: ["red", "orange"]
+    function expand() {
+        $(".search").toggleClass("close");
+        $(".input").toggleClass("square");
+        if ($('.search').hasClass('close')) {
+            $('.input').focus();
+        } else {
+            $('.input').blur();
         }
-}).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(parseInt(1000 * progress))
-});
+    };
+    $('button').on('click', expand);
+    //end search bar
 
-      $triggered_times = 1;
+    $(function() {
+        $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '300', // Distance from top before showing element (px)
+            topSpeed: 6000, // Speed back to top (ms)
+            animation: 'slide', // Fade, slide, none
+            animationInSpeed: 5000, // Animation in speed (ms)
+            animationOutSpeed: 3000, // Animation out speed (ms)
+            scrollImg: true,
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+    });
+    //end scroll up
 
-  };
+    var $triggered_times = 0;
+    $(window).scroll(function() {
+        var hT = $('.about_text').offset().top,
+            hH = $('.about_text').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT + hH - wH) && $triggered_times == 0) {
+            $('#circle1').circleProgress({
+                value: 0.86,
+                size: 120,
+                startAngle: -1.6,
+                thickness: 4,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('strong').html(parseInt(6587 * progress))
+            });
 
-})
+            $('#circle2').circleProgress({
+                value: 0.35,
+                size: 120,
+                startAngle: -1.6,
+                thickness: 4,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('strong').html(parseInt(896 * progress))
+            });
+
+            $('#circle3').circleProgress({
+                value: 0.55,
+                size: 120,
+                startAngle: -1.6,
+                thickness: 4,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('strong').html(parseInt(1674 * progress))
+            });
+
+            $('#circle4').circleProgress({
+                value: 0.25,
+                size: 120,
+                startAngle: -1.6,
+                thickness: 4,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('strong').html(parseInt(769 * progress))
+            });
+
+            $triggered_times = 1;
+
+        };
+
+    })
 
 
 

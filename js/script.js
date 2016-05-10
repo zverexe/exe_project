@@ -213,10 +213,10 @@ circle_bar('#circle1', 0.941, 6587);
 circle_bar('#circle2', 0.128, 896);
 circle_bar('#circle3', 0.240, 1674);
 circle_bar('#circle4', 0.110, 769);
-        }     
+             
 $triggered_times = 1;
-})
+};
 
 
-
+}); //end ready
 }); //end ready

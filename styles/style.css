@@ -248,12 +248,13 @@ ul {
 }
 
 #password {
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 .login a,
 p {
     color: #888;
+    font-family: 'RobotoRegular';
 }
 
 .login input[type="text"],

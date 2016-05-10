@@ -185,69 +185,37 @@ $(document).ready(function() {
         });
     });
     //end scroll up
+    
 
-    var $triggered_times = 0;
+    function circle_bar(id, value, progress_number){
+    
+            $(id).circleProgress({
+                value: value,
+                size: 120,
+                startAngle: -1.6,
+                thickness: 4,
+                fill: {
+                    gradient: ["red", "orange"]
+                }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('strong').html(parseInt(progress_number * progress))
+            });
+};
+ var $triggered_times = 0;
     $(window).scroll(function() {
         var hT = $('.about_text').offset().top,
             hH = $('.about_text').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
         if (wS > (hT + hH - wH) && $triggered_times == 0) {
-            $('#circle1').circleProgress({
-                value: 0.86,
-                size: 120,
-                startAngle: -1.6,
-                thickness: 4,
-                fill: {
-                    gradient: ["red", "orange"]
-                }
-            }).on('circle-animation-progress', function(event, progress) {
-                $(this).find('strong').html(parseInt(6587 * progress))
-            });
-
-            $('#circle2').circleProgress({
-                value: 0.35,
-                size: 120,
-                startAngle: -1.6,
-                thickness: 4,
-                fill: {
-                    gradient: ["red", "orange"]
-                }
-            }).on('circle-animation-progress', function(event, progress) {
-                $(this).find('strong').html(parseInt(896 * progress))
-            });
-
-            $('#circle3').circleProgress({
-                value: 0.55,
-                size: 120,
-                startAngle: -1.6,
-                thickness: 4,
-                fill: {
-                    gradient: ["red", "orange"]
-                }
-            }).on('circle-animation-progress', function(event, progress) {
-                $(this).find('strong').html(parseInt(1674 * progress))
-            });
-
-            $('#circle4').circleProgress({
-                value: 0.25,
-                size: 120,
-                startAngle: -1.6,
-                thickness: 4,
-                fill: {
-                    gradient: ["red", "orange"]
-                }
-            }).on('circle-animation-progress', function(event, progress) {
-                $(this).find('strong').html(parseInt(769 * progress))
-            });
-
-            $triggered_times = 1;
-
-        };
-
-    })
-
-
+         circle_bar('#circle1', 0.941, 6587);
+circle_bar('#circle1', 0.941, 6587);
+circle_bar('#circle2', 0.128, 896);
+circle_bar('#circle3', 0.240, 1674);
+circle_bar('#circle4', 0.110, 769);
+        }     
+$triggered_times = 1;
+})
 
 
 

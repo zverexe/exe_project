@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exe</title>
     <link rel="stylesheet" href="js/smartmenus/sm-core-css.css">
     <link rel="stylesheet" href="js/smartmenus/sm-clean.css">
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="js/jquery-ui-vertical-tabs-master/vertical-tabs.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
+    <link rel="stylesheet" href="js/dist/css/jquery.mmenu.all.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
     <script src="js/jquery-1.12.3.min.js"></script>
@@ -21,6 +24,7 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/circles-master/circles.js"></script>
     <script src="js/jquery-circle-progress-master/dist/circle-progress.js"></script>
+    <script src="js/dist/js/jquery.mmenu.all.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +62,27 @@
                                 <p class="button">
                                     <input type="submit" name="button" id="button" value="Submit">
                                 </p>
-                            </form> / Register</div>
+                            </form></div> / <div id="register"><p id="open_register">  Register</p>
+                                <form>
+                                <p>
+                                    <label for="username">Login:</label>
+                                    <input type="text" name="username" id="login">
+                                </p>
+                                <p>
+                                    <label for="password">Password: </label>
+                                    <input type="password" name="password" id="password">
+                                </p>
+                                
+                                <p>
+                                    <label for="username">Email:</label>
+                                    <input type="text" name="username" id="email">
+                                </p>
+                                <p class="button">
+                                    <input type="submit" name="button" id="button" value="Let's Go!">
+                                </p>
+                            </form>
+
+                            </div>
                     </li>
                     <li><img src="images/icon.png" alt="">Wishlist: 0 items</li>
                     <li>
@@ -76,32 +100,41 @@
     </header>
     <section class="main_menu">
         <div class="wrapper">
+            <div class="bar"></div>
             <div class="logo"><img src="images/èxe.png" alt=""></div>
             <div class="links">
-                <ul class="sm sm-clean">
-                    <li><a href="">Home</a>
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="main-menu" class="sm  sm-clean">
+                    <li><a href="" onclick="return false">Home</a>
                         <ul>
                             <li><a href="">This 1</a></li>
                             <li><a href="">This 2</a></li>
                             <li><a href="">This 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Pages</a>
+                    <li><a href="" onclick="return false">About Us</a></li>
+                    <li><a href="" onclick="return false">Pages</a>
                         <ul>
                             <li><a href="">This 4</a></li>
                             <li><a href="">This 5</a></li>
                             <li><a href="">This 6</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Features</a>
+                    <li><a href="" onclick="return false">Features</a>
                         <ul>
                             <li><a href="">This 7</a></li>
                             <li><a href="">This 8</a></li>
                             <li><a href="">This 9</a>
                                 <ul>
                                     <li>
-                                        <a href=""></a>
+                                        <a href="">This 10</a>
                                     </li>
                                     <li>
                                         <a href=""></a>
@@ -110,9 +143,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Shop</a>
+                    <li><a href="" onclick="return false">Portfolio</a></li>
+                    <li><a href="" onclick="return false">Blog</a></li>
+                    <li><a href="" onclick="return false">Shop</a>
                         <ul>
                             <li>
                                 <a href=""></a>
@@ -252,7 +285,7 @@
             </div>
             <div class="number_animation">
                 <div class="number">
-                    <div id="circle1"><strong>6587</strong></div>
+                    <div id="circle1"><strong>7000</strong></div>
                     <div class="circle_text">
                         <h2>Satiefied Clients</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer</br> adipiscing elit sed diam.</p>
@@ -260,7 +293,7 @@
                     <hr id="circle_line">
                 </div>
                 <div class="number">
-                    <div id="circle2"><strong>896</strong></div>
+                    <div id="circle2"><strong>7000</strong></div>
                     <div class="circle_text">
                         <h2>Completed Projects</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer</br> adipiscing elit sed diam.</p>
@@ -268,7 +301,7 @@
                     <hr id="circle_line">
                 </div>
                 <div class="number">
-                    <div id="circle3"><strong>1674</strong></div>
+                    <div id="circle3"><strong>7000</strong></div>
                     <div class="circle_text">
                         <h2>Likes on Average</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer</br> adipiscing elit sed diam.</p>
@@ -276,7 +309,7 @@
                     <hr id="circle_line">
                 </div>
                 <div class="number">
-                    <div id="circle4"><strong>769</strong></div>
+                    <div id="circle4"><strong>7000</strong></div>
                     <div class="circle_text">
                         <h2>We Launched</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer</br> adipiscing elit sed diam.</p>
@@ -299,11 +332,11 @@
                         <div>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum soluta nobis eleifend option. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                         </div>
-                        <h2>Our Mission<span>Eodem modo typi qui nunc nobis</span></h2>
+                        <h2>Our Mission<span></span></h2>
                         <div>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum soluta nobis eleifend option. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                         </div>
-                        <h2>Our Technology <span>Duis autem vel iriure dolor in hendrerit</span></h2>
+                        <h2>Our Technology <span></span></h2>
                         <div>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in nam liber tempor cum soluta nobis eleifend option. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                         </div>
@@ -402,6 +435,49 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis-</br>mod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                 <img src="images/line-3.png" height="2" width="170" alt="">
             </div>
+            <div class="tabs">
+                <ul>
+                    <li>
+                        <a href="#panel5">
+                            <div class="tab2">
+                                <div class="tab_img"><img src="images/icon-15.png" alt=""></div>
+                                <h3>Clean Design</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#panel6">
+                            <div class="tab2">
+                                <div class="tab_img"><img src="images/icon-17.png" alt=""></div>
+                                <h3>Clean Design</h3>
+                            </div>
+                        </a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#panel7">
+                            <div class="tab2">
+                                <div class="tab_img"><img src="images/icon-18.png" alt=""></div>
+                                <h3>Clean Design</h3>
+                            </div>
+                        </a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#panel8">
+                            <div class="tab2">
+                                <div class="tab_img"><img src="images/icon-19.png" alt=""></div>
+                                <h3>Clean Design</h3>
+                            </div>
+                        </a>
+                        </a>
+                    </li>
+                </ul>
+                <div id="panel5"><img src="images/screen-01.png" height="758" width="618" alt=""></div>
+                <div id="panel6"><img src="images/screen-01.png" height="758" width="618" alt=""></div>
+                <div id="panel7"><img src="images/screen-01.png" height="758" width="618" alt=""></div>
+                <div id="panel8"><img src="images/screen-01.png" height="758" width="618" alt=""></div>
+            </div>
             <div id="tab">
                 <ul>
                     <li>
@@ -457,14 +533,14 @@
             <img src="images/arrow-2.png" alt="" class="owl-prev prev_button">
             <div class="owl-carousel3">
                 <div class="clients_carousel">
-                    <div class="client"><img src="images/01-1.png" height="85" width="134" alt=""></div>
+                    <div class="client clientx"><img src="images/01-1.png" height="85" width="134" alt=""></div>
                     <div class="client"><img src="images/04-1.png" height="52" width="142" alt=""></div>
                     <div class="client"><img src="images/05-1.png" height="86" width="79" alt=""></div>
                     <div class="client"><img src="images/03.png" alt=""></div>
                     <div class="client"><img src="images/02.png" height="77" width="200" alt=""></div>
                 </div>
                 <div class="clients_carousel">
-                    <div class="client"><img src="images/01-1.png" height="85" width="134" alt=""></div>
+                    <div class="client clientx"><img src="images/01-1.png" height="85" width="134" alt=""></div>
                     <div class="client"><img src="images/04-1.png" height="52" width="142" alt=""></div>
                     <div class="client"><img src="images/05-1.png" height="86" width="79" alt=""></div>
                     <div class="client"><img src="images/03.png" alt=""></div>
@@ -568,7 +644,7 @@
                 </div>
                 <div class="get_touch">
                     <div class="addrres">
-                        <p>Address</p>
+                        <p>Address:</p>
                     </div>
                     <div class="touch_text">
                         <p>795 South Park Avenue,</br> Door 6 Wonderland, CA</br> 94107, Australia</p>
@@ -576,7 +652,7 @@
                 </div>
                 <div class="get_touch">
                     <div class="phone">
-                        <p>Phone</p>
+                        <p>Phone:</p>
                     </div>
                     <div class="touch_text">
                         <p>+440 875369208 - Office</br>
@@ -585,7 +661,7 @@
                 </div>
                 <div class="get_touch">
                     <div class="email">
-                        <p>Email</p>
+                        <p>Email:</p>
                     </div>
                     <div class="touch_text">
                         <p>support@sitename.com</br>
@@ -594,7 +670,7 @@
                 </div>
                 <div class="get_touch get_touch3">
                     <div class="follow">
-                        <p>Follow Us</p>
+                        <p>Follow Us:</p>
                     </div>
                     <div class="touch_text3">
                         <div class="social_media">

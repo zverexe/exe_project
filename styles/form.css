@@ -32,7 +32,7 @@
   font-family: 'RobotoRegular';
   outline: 0;
   -webkit-transition: width 0.2s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
-  transition: width 0.2s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out, padding 0.4s;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
   -webkit-transform: translate(-100%, -50%);
@@ -44,13 +44,13 @@
 .search {
   background: none;
   position: absolute;
-  top: 20px;
-  right: 9px;
+  top: 0px;
+  right: 4px;
   height: 23px;
   width: 24px;
   padding: 0;
   border-radius: 100%;
-  border: 0;
+  border: 0px;
   outline: 0;
   color: inherit;
   cursor: pointer;
@@ -93,7 +93,7 @@
   position: absolute;
   width: 20px;
   height: 1px;
-  margin-top: 2px;
+  margin-top: 0px;
   margin-left: -11px;
 
   background-color: #888;
@@ -111,7 +111,7 @@
   width: 20px;
   height: 1px;
   background-color: #888;
-  margin-top: 2px;
+  margin-top: 0px;
   margin-left: -11px;
   cursor: pointer;
   -webkit-transform: rotate(-45deg);

@@ -1,75 +1,95 @@
 .ui-tabs-vertical {
-	padding: 0;
-	
-	background-color: inherit;
+    padding: 0;
+    background-color: inherit;
 }
-.ui-tabs-vertical .ui-widget-header { border: none;
- }
+
+.ui-tabs-vertical .ui-widget-header {
+    border: none;
+}
+
 .ui-tabs-vertical .ui-tabs-nav {
-	float: right;
-	background:inherit;
-	width: auto;
-	border: none;
-	margin-right: 90px;
-	margin-top: 80px;
+    float: right;
+    background: inherit;
+    width: auto;
+    border: none;
+    margin-right: 90px;
+    margin-top: 80px;
 }
-.ui-tabs-nav{
-display: flex;
-border: none;
-flex-direction: column;
-margin-top: 10px;
+
+.ui-tabs-nav {
+    display: flex;
+    border: none;
+    flex-direction: column;
+    margin-top: 10px;
 }
+
 .ui-tabs-vertical .ui-tabs-nav li {
-	width: 100%;
-	margin: 0.2em 0;
-	
-	border: none;
-	
-	
+    width: 100%;
+    margin: 0.2em 0;
+    border: none;
 }
+
 .ui-tabs-vertical .ui-tabs-nav li a {
-	display: block;
-	width: 100%;
-	padding: 0.6em 1em;
+    display: block;
+    width: 100%;
+    padding: 0.6em 1em;
 }
+
 .ui-tabs-vertical .ui-tabs-nav li a:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
+
 .ui-tabs-vertical .ui-tabs-nav li.ui-state-active {
-	margin-bottom: 0.2em;
-	padding-bottom: 0;
-	
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
 }
+
 .ui-tabs-vertical .ui-tabs-nav li:last-child {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .ui-tabs-vertical .ui-tabs-panel {
-	float: none;
-	width: -webkit-calc(100% - 11em);
-	width: calc(100% - 11em);
-	box-sizing: border-box;
-border: none;
+    float: none;
+    width: -webkit-calc(100% - 11em);
+    width: calc(100% - 11em);
+    box-sizing: border-box;
+    border: none;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-background-color: inherit;
-border: none;
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background-color: inherit;
+    border: none;
 }
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, 
-.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-background-color: inherit;
-border: none;
-	}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header, .ui-state-active {
- 	
-background-color: inherit !important;
-border: none;
- }
- .ui-tabs .ui-tabs-nav li{
- 	white-space: nowrap;
- 	border: none;
- }
- .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
- 	background-color: inherit;
- 	color: #363636;
- 	border: none;
- }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    background-color: inherit;
+    border: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header,
+.ui-state-active {
+    background-color: inherit !important;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    
+    border: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background-color: inherit;
+    color: #363636;
+    border: none;
+}

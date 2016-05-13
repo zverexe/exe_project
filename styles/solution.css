@@ -1,0 +1,40 @@
+.solution {
+    height: 157px;
+    margin: auto;
+    background-color: #363636;
+}
+
+.solution .wrapper {
+    width: 1070px;
+    margin: auto;
+    text-align: center;
+}
+
+.solution h1 {
+    font-family: 'RalewayBold';
+    font-size: 32px;
+    color: #949494;
+    padding-top: 39px;
+}
+
+.solution p {
+    font-family: 'RalewayRegular';
+    font-size: 24px;
+    color: #6f6f6f;
+}
+@media screen and (max-width:768px){
+  .solution{
+    height: auto;
+  }  
+  .solution .wrapper{
+    width: 100%;
+
+  }
+  .solution h1 {
+    font-size: 25px;
+  }
+  .solution p {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+}

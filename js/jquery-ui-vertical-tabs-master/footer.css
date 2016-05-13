@@ -1,0 +1,39 @@
+footer {
+    height: 78px;
+    background-color: #111111;
+}
+
+footer .wrapper {
+    width: 1170px;
+    margin: auto;
+    color: #464646;
+}
+
+footer p {
+    float: left;
+    padding-top: 30px;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+footer ul {
+    float: right;
+    padding-top: 30px;
+}
+
+footer li {
+    display: inline-block;
+    padding-left: 19px;
+}
+
+footer a {
+    color: #464646;
+    font-family: "RalewayBold";
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #e54939;
+}
+@media screen and (max-width:768px) {
+

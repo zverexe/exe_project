@@ -1,0 +1,82 @@
+.clients {
+    height: 255px;
+    background-image: url(../images/polygon.png);
+}
+
+.clients .wrapper {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.clients_carousel {
+    padding-top: 70px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.clients .next_button {
+    position: absolute;
+    top: 108px;
+    left: 0px;
+}
+
+.clients .prev_button {
+    position: absolute;
+    top: 108px;
+    right: 0px;
+}
+
+.clients .next_button:hover {
+    background-color: #252525;
+    border-radius: 4px;
+}
+
+.clients .prev_button:hover {
+    background-color: #252525;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:768px){
+    .clients{
+        height: auto;
+       
+    }
+    .clients .wrapper{
+        width: auto;
+     padding-bottom: 20px;
+    }
+    .clients_carousel {
+    max-width: 100%;
+max-height: 100%;
+justify-content: center;
+align-items: center;
+padding-left: 0px;
+margin-left: 0px;
+padding-top: 20px;
+    }
+.client{
+    max-width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    overflow: hidden;
+    
+}
+.clientx{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.client img{
+    max-width: 100%;
+}
+    .clients .next_button {
+    display: none;
+
+.clients .prev_button {
+   display: none;
+}
+}

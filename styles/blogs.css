@@ -1,0 +1,150 @@
+.blogs {
+    height: 637px;
+    background-color: #fff;
+}
+
+.blogs .wrapper {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+.blogs_text {
+    padding-top: 80px;
+}
+
+.blogs_text h1 {
+    color: #363636;
+    font-family: "RalewayBold";
+    font-size: 30px;
+}
+
+.blogs_text p {
+    padding-top: 18px;
+    padding-bottom: 29px;
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    color: #959595;
+    ;
+}
+
+.blogs_carousel {
+    display: flex;
+    margin-top: 40px;
+}
+
+.blog1_img1,
+.blog1_img2 {
+    float: left;
+    padding-right: 27px;
+}
+
+.btext {
+    padding-top: 23px;
+    padding-bottom: 30px;
+    color: #959595;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+.date {
+    padding-top: 30px;
+    padding-bottom: 22px;
+    color: #ccc;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+.blog1 a,
+.blog2 a {
+    color: #363636;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+.blog1 h3,
+.blog2 h3 {
+    color: #363636;
+    font-family: "RalewaySemiBold";
+    font-size: 18px;
+}
+
+.blog1,
+.blog2 {
+    width: 568px;
+    text-align: left;
+    background-color: #fafafa;
+    border-bottom: 3px solid transparent;
+}
+
+.blog1 {
+    margin-right: 28px;
+}
+
+.blog1:hover,
+.blog2:hover {
+    border-bottom: 2px solid #e54939;
+}
+
+.blog1:hover h3,
+.blog2:hover h3 {
+    color: #e54939;
+}
+
+.blog1:hover a,
+.blog2:hover a {
+    color: #e54939;
+}
+
+.carousel_changers {
+    margin-top: 40px;
+}
+
+.carousel_changers img:hover {
+    color: #e54939;
+}
+
+@media screen and (max-width:768px) {
+    .blogs {
+        height: 100%;
+    }
+    .blogs .wrapper {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .blogs_carousel {
+        flex-direction: column;
+    }
+    .blog1_img1,
+    .blog1_img2 {
+        width: 200px;
+        height: 200px;
+    }
+    .blog1,
+    .blog2 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .blog1 p,
+    h3 {
+        display: block;
+    }
+    .blog1,
+    .blog2 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .blog1_img1,
+    .blog1_img2 {
+        float: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+}

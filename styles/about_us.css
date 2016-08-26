@@ -1,0 +1,98 @@
+.about_us {
+    height: 630px;
+    background-image: url(../images/noise-1.png);
+    margin-top: 20px;
+}
+
+.about_us .wrapper {
+    width: 1170px;
+    margin: auto;
+    position: relative;
+
+}
+
+.about_text {
+    padding-top: 78px;
+    text-align: center;
+}
+
+.about_text h1 {
+    font-size: 30px;
+    font-family: 'RalewayBold';
+    color: #fff;
+}
+
+.about_text p {
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    color: #959595;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.number_animation {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#circle1, #circle2, #circle3, #circle4 {
+    position: relative;
+}
+
+.number strong {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: #fff;
+    font-family: "RalewayBold";
+    font-size: 36px;
+}
+
+.number p {
+    color: #949494;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    padding-top: 26px;
+    padding-bottom: 27px;
+}
+
+.number h2 {
+    color: #e54939;
+    font-family: "RalewayBold";
+    font-size: 24px;
+    padding-top: 37px;
+}
+
+#circle_line {
+    width: 70px;
+    color: #555555;
+}
+@media screen and (max-width:768px){
+.about_us{
+    height: auto;
+
+}
+.about_us .wrapper{
+    width: auto;
+}
+.number_animation{
+    display: inline-block;
+    text-align: center;
+}
+.number{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+}
+@media screen and (max-width:1185px){
+.about_us .wrapper {
+margin-right: 0px;
+}
+    }

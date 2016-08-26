@@ -1,0 +1,266 @@
+.information_tab {
+    height: 611px;
+    background-color: #252525;
+}
+
+.information_tab .wrapper {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.information_containers {
+    padding-top: 78px;
+}
+
+.information_containers ul {
+    flex-direction: column;
+}
+
+.logo1 {
+    font-size: 10px;
+    font-family: 'RobotoBold';
+    display: flex;
+    align-items: center;
+}
+
+.logo_text1 {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    font-family: 'RobotoRegular';
+    color: #626262;
+    font-size: 14px;
+}
+
+.read {
+    padding-top: 20px;
+}
+
+.read:hover {
+    color: #e54939;
+}
+
+.logo_form h3 {
+    color: #fff;
+    font-family: "RobotoBold";
+    font-size: 18px;
+}
+
+.logo_form p {
+    font-family: 'RobotoRegular';
+    font-size: 13px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_container p {
+    font-size: 10px;
+    font-family: 'RobotoRegular';
+    color: #363636;
+}
+
+.logo1_img {
+    padding-right: 15px;
+}
+
+.information_containers form {
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+.newsletters_form {
+    height: 40px;
+    width: 268px;
+    background-color: #171717;
+    border: none;
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    color: #fff;
+    padding-left: 10px;
+}
+
+.news_photo {
+    margin-right: 15px;
+}
+
+.news_photo img {
+    width: 70px;
+    height: 65px;
+    border-radius: 3px;
+}
+
+.news,
+.twitter,
+.get_touch {
+    display: flex;
+    padding-top: 17px;
+    border-bottom: 1px solid #363636 !important;
+    padding-bottom: 10px;
+    margin-right: 30px;
+}
+
+.news3 {
+    border-bottom: 0px !important;
+}
+
+.twitter3 {
+    border-bottom: 0px !important;
+}
+
+.get_touch3 {
+    border-bottom: 0px !important;
+}
+
+.twitter_icon {
+    margin-right: 15px;
+}
+
+.twitter p:last-child,
+.news p:last-child {
+    padding-top: 16px;
+    color: #454545;
+    font-family: "RobotoRegular";
+    font-size: 13px;
+}
+
+.get_touch {
+    padding-top: 30px;
+    margin-right: 0px;
+
+}
+
+.addrres {
+    margin-right: 35px;
+}
+
+.follow {
+    margin-right: 15px;
+    width: 69px;
+}
+
+.phone {
+    margin-right: 45px;
+}
+
+.email {
+    margin-right: 50px;
+}
+
+.news {
+    padding-top: 22px;
+    border-bottom: 1px solid #363636;
+}
+
+.news p:first-child,
+.twitter p:first-child,
+.get_touch p:first-child {
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    color: #949494;
+}
+
+.header h3 {
+    font-size: 24px;
+    font-family: 'RalewayBold';
+    color: #fff;
+}
+
+.news:hover p:first-child {
+    color: #e54939;
+}
+
+.news:hover p:last-child {
+    color: #fff;
+}
+
+.twitter {
+    padding-top: 20px;
+}
+
+.twitter:hover p:first-child {
+    color: #e54939;
+}
+
+.twitter:hover p:last-child {
+    color: #fff;
+}
+
+.information_containers>.get_touch {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.social_media a {
+    color: #363636;
+    line-height: 23px;
+}
+
+.social_media a:hover i {
+    color: #e54939;
+}
+#policy{
+    padding-top: 10px;
+}
+
+    
+@media screen and (max-width:768px) {
+    .information_tab {
+        height: auto;
+    }
+    .information_tab .wrapper {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    .information_containers {
+        padding-top: 30px;
+    }
+    .logo_container {
+        text-align: center;
+    }
+    .news,
+    .twitter,
+    .get_touch {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+    .news3,
+    .twitter3, .get_touch3 {
+        border-bottom: 1px solid #363636 !important;
+    }
+    .logo_container {
+        display: flex;
+        justify-content: center;
+    }
+    .get_touch3{
+        margin-bottom: 15px;
+
+    }
+    .phone{
+padding-bottom: 13%;
+    }
+    .follow{
+        padding-bottom: 16%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .email{
+        padding-bottom: 13%;
+    }
+    .social_media{
+       
+    }
+}
+
+@media screen and (max-width:550px) {
+    .information_tab .wrapper {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

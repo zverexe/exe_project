@@ -1,0 +1,228 @@
+@import url("header.css");
+@import url("main_menu.css");
+@import url("slider.css");
+@import url("solution.css");
+@import url("first_content.css");
+@import url("portfolio.css");
+@import url("about_us.css");
+@import url("choose_us.css");
+@import url("blogs.css");
+@import url("options.css");
+@import url("clients.css");
+@import url("information_tab.css");
+@import url("footer.css");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* end of reset browser styles */
+
+@font-face {
+    font-family: "RalewayExtraBold";
+    src: url('../fonts/Raleway-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "RalewayRegular";
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url('../fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "RalewaySemiBold";
+    src: url('../fonts/Raleway-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+
+
+/*end header*/
+
+
+
+
+/*end main menu*/
+
+
+
+
+/*end slider*/
+
+
+
+
+
+
+/*end first_content*/
+
+
+
+
+/*end portfolio*/
+
+
+
+
+/*end about_us*/
+
+
+
+
+/*end choose*/
+
+
+
+
+/*end blogs*/
+
+
+
+
+/*end options*/
+
+
+
+
+/*end clients*/
+
+
+
+
+/*end information_tab*/
+
+
+
+
+/*owl dots*/
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border: none;
+}

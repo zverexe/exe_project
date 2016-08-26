@@ -1,0 +1,178 @@
+.options {
+    height: 824px;
+    background-image: url(../images/noise-4.png);
+    overflow: hidden;
+}
+
+.options .wrapper {
+    width: 1170px;
+    margin: auto;
+    
+}
+
+.options_text {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.options_text h2 {
+    color: #363636;
+    /* text color */
+    font-family: "RalewayBold" !important;
+    font-size: 30px;
+}
+
+.options_text p {
+    padding-top: 27px;
+    padding-bottom: 30px;
+    color: #959595;
+    /* text color */
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+.tab_img {
+    float: left;
+    width: 95px;
+    height: 95px;
+    background-color: #fff;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 29px;
+    margin-left: 0px;
+    border: 2px solid transparent;
+}
+
+.tab1 {
+    width: 360px;
+    text-align: left;
+}
+
+.tab1:hover .tab_img {
+    background-color: inherit;
+    border: 2px solid #e54939;
+}
+
+.tab1:hover h3 {
+    color: #e54939;
+    background-color: inherit;
+}
+
+.tab1:hover p {
+    color: #363636;
+}
+
+.tab ul {
+    margin-top: 20px;
+}
+
+.tab li {
+    margin-top: 20px;
+    background-color: inherit;
+}
+
+.tab1 p {
+    color: #949494;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+}
+
+.tab1 h3 {
+    color: #363636;
+    font-family: "RalewayBold";
+    font-size: 20px;
+}
+.tabs{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .options {
+        height: auto;
+        text-align: center;
+    }
+    .options .wrapper {
+        width: auto;
+        text-align: center;
+    }
+     .ui-tabs-nav{
+   display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+   max-width: 100%;
+text-align: center;
+    
+ }
+    .tab1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        display: none;
+
+    }
+    .tabs{
+       display: block;
+       text-align: center;
+    }
+    .tab_img {
+        float: none;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        margin: 0px;
+    }
+    .tab2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+
+ 
+#panel4 img, #panel1 img, #panel2 img, #panel3 img
+{
+     max-width: 100%;
+     padding-right: 0px;
+     margin-right: 0px;
+     text-align: center;
+     display: none;
+}
+#panel5 img, #panel6 img, #panel7 img, #panel8 img{
+
+     max-width: 100%;
+     padding-right: 0px;
+     margin-right: 0px;
+     text-align: center;
+}
+#panel4 {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+}
+.ui-tabs .ui-tabs-panel{
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+.ui-tabs-vertical .ui-tabs-panel{
+    width: auto;
+}
+}
+@media screen and (max-width:450px){
+ .tab_img {
+       
+        width: 45px;
+        height: 45px;
+        margin: 0px;
+        margin-right: 0px;
+    }
+}
